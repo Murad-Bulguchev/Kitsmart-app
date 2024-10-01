@@ -1,0 +1,15 @@
+flutter_native_splash: 
+  color: "#FFFFFF"
+  color_dark: "#FF3838"
+  image: assets/images/animations/sammy-line-man-and-woman-high-fiving-each-other.png
+  image_dark: assets/images/animations/sammy-line-man-and-woman-high-fiving-each-other.png
+
+  android_12: 
+    color: "#FFFFFF"
+    color_dark: "#FF3838"
+    image: assets/images/animations/sammy-line-man-and-woman-high-fiving-each-other.png
+    image_dark: assets/images/animations/sammy-line-man-and-woman-high-fiving-each-other.png
+  web: false
+
+
+  # "#5C3FFF"
