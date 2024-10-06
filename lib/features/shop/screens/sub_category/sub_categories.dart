@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/common/widgets/appbar/appbar.dart';
-import 'package:flutter_application_2/common/widgets/login_signup/mm_rounded_image.dart';
-import 'package:flutter_application_2/common/widgets/producst/product_cards/producst_card_harizantal.dart';
-import 'package:flutter_application_2/common/widgets/texts/section_heading.dart';
-import 'package:flutter_application_2/utils/constants/image_strings.dart';
-import 'package:flutter_application_2/utils/constants/sizes.dart';
+import 'package:kitsmart/common/widgets/appbar/appbar.dart';
+import 'package:kitsmart/common/widgets/login_signup/mm_rounded_image.dart';
+import 'package:kitsmart/common/widgets/producst/product_cards/producst_card_harizantal.dart';
+import 'package:kitsmart/common/widgets/texts/section_heading.dart';
+import 'package:kitsmart/utils/constants/image_strings.dart';
+import 'package:kitsmart/utils/constants/sizes.dart';
 
 class SubCategoriesScreen extends StatelessWidget {
   const SubCategoriesScreen({super.key});
@@ -12,13 +12,13 @@ class SubCategoriesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MMAppBar(
+      appBar: const MMAppBar(
         title: Text('Sport'),
         showBackArrow: true,
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(MMSizes.defaultSpace),
+          padding: const EdgeInsets.all(MMSizes.defaultSpace),
           child: Column(
             children: [
               const MMRoudedImage(

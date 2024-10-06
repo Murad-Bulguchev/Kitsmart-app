@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/common/widgets/producst/cart/cart_menu_icon.dart';
-import 'package:flutter_application_2/features/shop/screens/home/home.dart';
-import 'package:flutter_application_2/features/shop/screens/store/store.dart';
-import 'package:flutter_application_2/features/shop/screens/wishlist/wishlist.dart';
-import 'package:flutter_application_2/features/personalization/screens/settings/settings.dart';
-import 'package:flutter_application_2/utils/constants/colors.dart';
-import 'package:flutter_application_2/utils/helpers/helper_function.dart';
+import 'package:kitsmart/common/widgets/producst/cart/cart_menu_icon.dart';
+import 'package:kitsmart/features/shop/screens/cart/cart.dart';
+import 'package:kitsmart/features/shop/screens/home/home.dart';
+import 'package:kitsmart/features/shop/screens/store/store.dart';
+import 'package:kitsmart/features/shop/screens/wishlist/wishlist.dart';
+import 'package:kitsmart/features/personalization/screens/settings/settings.dart';
+import 'package:kitsmart/utils/constants/colors.dart';
+import 'package:kitsmart/utils/helpers/helper_function.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -40,7 +41,7 @@ class NavigationMenu extends StatelessWidget {
               const NavigationDestination(
                   icon: Icon(Iconsax.user), label: 'Профиль'),
               NavigationDestination(
-                  icon: MMCartContainerIcon(
+                  icon: MMCartContainerIcon( 
                     onPressed: () {},
                   ),
                   label: 'Корзина '),
@@ -59,6 +60,6 @@ class NavigationController extends GetxController {
     const Store(),
     const FavouriteScreen(),
     const SettingsScreen(),
-    const SettingsScreen(),
+    const CartScreen(),
   ];
 }

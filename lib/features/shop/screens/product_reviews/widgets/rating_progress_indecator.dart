@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/features/shop/screens/product_reviews/widgets/progress_indecator_and_reting.dart';
+import 'package:kitsmart/features/shop/screens/product_reviews/widgets/progress_indecator_and_reting.dart';
 
 class RatingProgressIndecator extends StatelessWidget {
   const RatingProgressIndecator({super.key});
@@ -12,10 +12,10 @@ class RatingProgressIndecator extends StatelessWidget {
             flex: 3,
             child:
                 Text('4.8', style: Theme.of(context).textTheme.displayLarge)),
-        Expanded(
+        const Expanded(
             flex: 7,
             child: Column(
-              children: const [
+              children: [
                 ProgressIndecatorAndReting(text: '5', value: 1.0),
                 ProgressIndecatorAndReting(text: '4', value: 0.8),
                 ProgressIndecatorAndReting(text: '3', value: 0.6),

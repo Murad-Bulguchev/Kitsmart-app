@@ -47,28 +47,29 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAfAD2yxMT4LvX110dreQ1YdIb3gGQSV-k',
-    appId: '1:786537118015:web:c7a479c819e9c2a20abb8a',
-    messagingSenderId: '786537118015',
-    projectId: 'kitsmart-fc6ad',
-    authDomain: 'kitsmart-fc6ad.firebaseapp.com',
-    storageBucket: 'kitsmart-fc6ad.appspot.com',
+    apiKey: 'AIzaSyBWrAVsUoVhVTVC_gEBZDJ7GMPIBhZbi4M',
+    appId: '1:466473133509:web:c5898d3729d18411a3d7ac',
+    messagingSenderId: '466473133509',
+    projectId: 'kitsmart-d776f',
+    authDomain: 'kitsmart-d776f.firebaseapp.com',
+    storageBucket: 'kitsmart-d776f.appspot.com',
+    measurementId: 'G-CEM37D1Q15',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDLR_cXr19_64OSK4DdK3oWj0FkEN37jeo',
-    appId: '1:786537118015:android:484d2c35724b0d340abb8a',
-    messagingSenderId: '786537118015',
-    projectId: 'kitsmart-fc6ad',
-    storageBucket: 'kitsmart-fc6ad.appspot.com',
+    apiKey: 'AIzaSyBoBfqjYvpTF0rlYR36Y1cpi1tf1t4Gh_Y',
+    appId: '1:466473133509:android:c2346d1a34677f7ba3d7ac',
+    messagingSenderId: '466473133509',
+    projectId: 'kitsmart-d776f',
+    storageBucket: 'kitsmart-d776f.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDSXP0sSpJlDVy35KAtlg959PvrDdLMoPo',
-    appId: '1:786537118015:ios:2c32c736f3b9dc8a0abb8a',
-    messagingSenderId: '786537118015',
-    projectId: 'kitsmart-fc6ad',
-    storageBucket: 'kitsmart-fc6ad.appspot.com',
-    iosBundleId: 'com.example.flutterApplication2',
+    apiKey: 'AIzaSyCnOMpJTaU8zboUZH5O5VRPaePvboU3v9I',
+    appId: '1:466473133509:ios:17ff2f6d7ebac7dfa3d7ac',
+    messagingSenderId: '466473133509',
+    projectId: 'kitsmart-d776f',
+    storageBucket: 'kitsmart-d776f.appspot.com',
+    iosBundleId: 'com.example.kitsmart',
   );
 }

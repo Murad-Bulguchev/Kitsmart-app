@@ -3,11 +3,11 @@ import '../../../utils/constants/sizes.dart';
 
 class MMGridLayout extends StatelessWidget {
   const MMGridLayout({
-    Key? key,
+    super.key,
     required this.itemCount,
     required this.itemBuilder,
     this.mainAxisExtent = 288,
-  }) : super(key: key);
+  });
 
   final int itemCount;
   final double? mainAxisExtent;

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/common/widgets/brand/brand_show_case.dart';
-import 'package:flutter_application_2/common/widgets/layouts/grid_layout.dart';
-import 'package:flutter_application_2/common/widgets/producst/product_cards/producst_card_vertical.dart';
-import 'package:flutter_application_2/common/widgets/texts/section_heading.dart';
-import 'package:flutter_application_2/utils/constants/image_strings.dart';
-import 'package:flutter_application_2/utils/constants/sizes.dart';
+import 'package:kitsmart/common/widgets/brand/brand_show_case.dart';
+import 'package:kitsmart/common/widgets/layouts/grid_layout.dart';
+import 'package:kitsmart/common/widgets/producst/product_cards/producst_card_vertical.dart';
+import 'package:kitsmart/common/widgets/texts/section_heading.dart';
+import 'package:kitsmart/utils/constants/image_strings.dart';
+import 'package:kitsmart/utils/constants/sizes.dart';
 
 class MMCategoryTab extends StatelessWidget {
   const MMCategoryTab({super.key});

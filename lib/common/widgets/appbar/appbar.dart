@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/utils/constants/colors.dart';
-import 'package:flutter_application_2/utils/device/device_utility.dart';
-import 'package:flutter_application_2/utils/helpers/helper_function.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:kitsmart/utils/constants/colors.dart';
+import 'package:kitsmart/utils/device/device_utility.dart';
+import 'package:kitsmart/utils/helpers/helper_function.dart';
 
 class MMAppBar extends StatelessWidget implements PreferredSizeWidget {
   const MMAppBar({
@@ -31,8 +31,9 @@ class MMAppBar extends StatelessWidget implements PreferredSizeWidget {
         leading: showBackArrow
             ? IconButton(
                 onPressed: () => Get.back(),
-                icon:  Icon(
-                  Iconsax.arrow_left, color: dark ? MMColors.textWhite : MMColors.dark,
+                icon: Icon(
+                  Iconsax.arrow_left,
+                  color: dark ? MMColors.textWhite : MMColors.dark,
                 ),
               )
             : leadingIcon != null

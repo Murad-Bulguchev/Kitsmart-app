@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/common/widgets/layouts/grid_layout.dart';
-import 'package:flutter_application_2/common/widgets/producst/product_cards/producst_card_vertical.dart';
-import 'package:flutter_application_2/utils/constants/sizes.dart';
+import 'package:kitsmart/common/widgets/layouts/grid_layout.dart';
+import 'package:kitsmart/common/widgets/producst/product_cards/producst_card_vertical.dart';
+import 'package:kitsmart/utils/constants/sizes.dart';
 import 'package:iconsax/iconsax.dart';
 
 class MMSortableProducts extends StatelessWidget {

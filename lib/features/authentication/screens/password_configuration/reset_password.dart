@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/utils/constants/colors.dart';
-import 'package:flutter_application_2/utils/constants/image_strings.dart';
-import 'package:flutter_application_2/utils/constants/sizes.dart';
-import 'package:flutter_application_2/utils/constants/text_strings.dart';
-import 'package:flutter_application_2/utils/helpers/helper_function.dart';
+import 'package:kitsmart/utils/constants/colors.dart';
+import 'package:kitsmart/utils/constants/image_strings.dart';
+import 'package:kitsmart/utils/constants/sizes.dart';
+import 'package:kitsmart/utils/constants/text_strings.dart';
+import 'package:kitsmart/utils/helpers/helper_function.dart';
 import 'package:get/get.dart';
 
 class ResetPassword extends StatelessWidget {
@@ -16,7 +16,7 @@ class ResetPassword extends StatelessWidget {
         automaticallyImplyLeading: false,
         actions: [
           Padding(
-              padding: EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10),
               child: IconButton(
                   onPressed: () => Get.back(),
                   icon: const Icon(CupertinoIcons.clear)))
@@ -51,13 +51,14 @@ class ResetPassword extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () {},
-                  child: const Text(MMTexts.done),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: MMColors.primaryColor2,
-                    side: BorderSide(width: 1, color: MMColors.primaryColor2),
+                    side: const BorderSide(
+                        width: 1, color: MMColors.primaryColor2),
                     padding: const EdgeInsets.all(12),
                     minimumSize: const Size(double.infinity, 55),
                   ),
+                  child: const Text(MMTexts.done),
                 ),
               ),
               const SizedBox(height: MMSizes.spaceBtwSections),
@@ -66,12 +67,12 @@ class ResetPassword extends StatelessWidget {
                 width: double.infinity,
                 child: TextButton(
                     onPressed: () {},
-                    child: const Text(MMTexts.resendEmail),
                     style: ElevatedButton.styleFrom(
                       foregroundColor: MMColors.textButtonColor,
                       padding: const EdgeInsets.all(12),
                       minimumSize: const Size(double.infinity, 55),
-                    )),
+                    ),
+                    child: const Text(MMTexts.resendEmail)),
               ),
             ],
           ), // Column

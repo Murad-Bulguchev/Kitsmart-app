@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/common/widgets/images/mm_circular_image.dart';
-import 'package:flutter_application_2/utils/constants/colors.dart';
-import 'package:flutter_application_2/utils/constants/image_strings.dart';
+import 'package:kitsmart/common/widgets/images/mm_circular_image.dart';
+import 'package:kitsmart/utils/constants/colors.dart';
+import 'package:kitsmart/utils/constants/image_strings.dart';
 import 'package:iconsax/iconsax.dart';
 
 class MMUserProfileTitle extends StatelessWidget {

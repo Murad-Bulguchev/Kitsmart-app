@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/features/authentication/screens/onboarding/onboarding.dart';
-import 'package:flutter_application_2/utils/theme/theme.dart';
-import 'package:get/get_navigation/get_navigation.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:kitsmart/features/authentication/screens/onboarding/onboarding.dart';
+import 'package:kitsmart/utils/theme/theme.dart';
 
 void main() {
   runApp(const App());
@@ -17,6 +17,6 @@ class App extends StatelessWidget {
         themeMode: ThemeMode.system,
         theme: MMAppTheme.lightTheme,
         darkTheme: MMAppTheme.darkTheme,
-        home: OnBoardingScreen());
+        home: const OnBoardingScreen());
   }
 }

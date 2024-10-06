@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/features/authentication/screens/signup/verify_email.dart';
-import 'package:flutter_application_2/features/authentication/screens/signup/widgets/terms_conditions_checkbox.dart';
-import 'package:flutter_application_2/utils/constants/colors.dart';
-import 'package:flutter_application_2/utils/constants/sizes.dart';
-import 'package:flutter_application_2/utils/constants/text_strings.dart';
+import 'package:kitsmart/features/authentication/screens/signup/verify_email.dart';
+import 'package:kitsmart/features/authentication/screens/signup/widgets/terms_conditions_checkbox.dart';
+import 'package:kitsmart/utils/constants/colors.dart';
+import 'package:kitsmart/utils/constants/sizes.dart';
+import 'package:kitsmart/utils/constants/text_strings.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -135,7 +135,7 @@ class MMSignupForm extends StatelessWidget {
         ),
         const SizedBox(height: MMSizes.spaceBtwSections),
         // Checkbox
-        MMTermsAndConditionCheckbox(),
+        const MMTermsAndConditionCheckbox(),
 
         const SizedBox(height: MMSizes.spaceBtwSections),
         //SingUp button
@@ -146,7 +146,7 @@ class MMSignupForm extends StatelessWidget {
             style: ElevatedButton.styleFrom(
                 backgroundColor: MMColors.primaryColor2,
                 padding: const EdgeInsets.all(12),
-                side: BorderSide(width: 1, color: MMColors.primaryColor2),
+                side: const BorderSide(width: 1, color: MMColors.primaryColor2),
                 minimumSize: const Size(double.infinity, 55)),
             child: const Text(MMTexts.createAccount),
           ),

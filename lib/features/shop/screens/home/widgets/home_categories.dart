@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/common/widgets/image_texts_widgets/vertical_image_text.dart';
-import 'package:flutter_application_2/features/shop/screens/sub_category/sub_categories.dart';
-import 'package:flutter_application_2/utils/constants/image_strings.dart';
+import 'package:kitsmart/common/widgets/image_texts_widgets/vertical_image_text.dart';
+import 'package:kitsmart/features/shop/screens/sub_category/sub_categories.dart';
+import 'package:kitsmart/utils/constants/image_strings.dart';
 import 'package:get/get.dart';
 
 class MMHomeCategories extends StatelessWidget {
@@ -19,7 +19,7 @@ class MMHomeCategories extends StatelessWidget {
           return MMVerticalImageText(
               image: MMImages.google,
               title: 'Shoes',
-              onTap: () => Get.to(() => SubCategoriesScreen()));
+              onTap: () => Get.to(() => const SubCategoriesScreen()));
         },
       ),
     );

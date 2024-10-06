@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/utils/constants/colors.dart';
-import 'package:flutter_application_2/utils/constants/sizes.dart';
-import 'package:flutter_application_2/utils/helpers/helper_function.dart';
+import 'package:kitsmart/utils/constants/colors.dart';
+import 'package:kitsmart/utils/constants/sizes.dart';
+import 'package:kitsmart/utils/helpers/helper_function.dart';
 
 class MMCircularImage extends StatelessWidget {
   const MMCircularImage(
@@ -29,14 +29,19 @@ class MMCircularImage extends StatelessWidget {
       height: height,
       padding: EdgeInsets.all(padding),
       decoration: BoxDecoration(
-          color: backgroundColor ?? (MMHelperFunctions.isDarkMode(context) ? MMColors.black : MMColors.textWhite),
+          color: backgroundColor ??
+              (MMHelperFunctions.isDarkMode(context)
+                  ? MMColors.black
+                  : MMColors.textWhite),
           borderRadius: BorderRadius.circular(100)),
       child: Center(
         child: Image(
-        fit: fit,
-        image: isNetworkImage ? NetworkImage(image) : AssetImage(image) as ImageProvider,
-        color: overlayColor,
-      ),
+          fit: fit,
+          image: isNetworkImage
+              ? NetworkImage(image)
+              : AssetImage(image) as ImageProvider,
+          color: overlayColor,
+        ),
       ),
     );
   }

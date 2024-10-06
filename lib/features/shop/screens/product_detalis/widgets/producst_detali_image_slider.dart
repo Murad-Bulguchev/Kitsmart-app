@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/common/widgets/appbar/appbar.dart';
-import 'package:flutter_application_2/common/widgets/custom_shapes/curved_edges/curved_edges_widget.dart';
-import 'package:flutter_application_2/common/widgets/icon/mm_circular_icon.dart';
-import 'package:flutter_application_2/common/widgets/login_signup/mm_rounded_image.dart';
-import 'package:flutter_application_2/utils/constants/colors.dart';
-import 'package:flutter_application_2/utils/constants/image_strings.dart';
-import 'package:flutter_application_2/utils/constants/sizes.dart';
+import 'package:kitsmart/common/widgets/appbar/appbar.dart';
+import 'package:kitsmart/common/widgets/custom_shapes/curved_edges/curved_edges_widget.dart';
+import 'package:kitsmart/common/widgets/icon/mm_circular_icon.dart';
+import 'package:kitsmart/common/widgets/login_signup/mm_rounded_image.dart';
+import 'package:kitsmart/utils/constants/colors.dart';
+import 'package:kitsmart/utils/constants/image_strings.dart';
+import 'package:kitsmart/utils/constants/sizes.dart';
 import 'package:iconsax/iconsax.dart';
 
 class ProducstDetaliImageSlider extends StatelessWidget {
@@ -17,7 +17,7 @@ class ProducstDetaliImageSlider extends StatelessWidget {
         color: MMColors.light,
         child: Stack(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 400,
               child: Padding(
                 padding: EdgeInsets.all(MMSizes.defaultSpace * 2),

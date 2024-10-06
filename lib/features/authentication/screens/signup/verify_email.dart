@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/common/widgets/succes_screen/succes_screen.dart';
-import 'package:flutter_application_2/features/authentication/screens/login/login.dart';
-import 'package:flutter_application_2/utils/constants/colors.dart';
-import 'package:flutter_application_2/utils/constants/image_strings.dart';
-import 'package:flutter_application_2/utils/constants/sizes.dart';
-import 'package:flutter_application_2/utils/constants/text_strings.dart';
-import 'package:flutter_application_2/utils/helpers/helper_function.dart';
+import 'package:kitsmart/common/widgets/succes_screen/succes_screen.dart';
+import 'package:kitsmart/features/authentication/screens/login/login.dart';
+import 'package:kitsmart/utils/constants/colors.dart';
+import 'package:kitsmart/utils/constants/image_strings.dart';
+import 'package:kitsmart/utils/constants/sizes.dart';
+import 'package:kitsmart/utils/constants/text_strings.dart';
+import 'package:kitsmart/utils/helpers/helper_function.dart';
 import 'package:get/get.dart';
 
 class VerifyEmailScreen extends StatelessWidget {
@@ -55,7 +55,7 @@ class VerifyEmailScreen extends StatelessWidget {
                       style: ElevatedButton.styleFrom(
                           padding: const EdgeInsets.all(12),
                           backgroundColor: MMColors.primaryColor2,
-                          side: BorderSide(
+                          side: const BorderSide(
                               color: MMColors.primaryColor2, width: 1),
                           minimumSize: const Size(double.infinity, 55)),
                       child: const Text(MMTexts.tContinue))),

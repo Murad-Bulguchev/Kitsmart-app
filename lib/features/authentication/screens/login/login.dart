@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/common/styles/spacing_styles.dart';
-import 'package:flutter_application_2/common/widgets/login_signup/form_divider.dart';
-import 'package:flutter_application_2/common/widgets/login_signup/social_buttons.dart';
-import 'package:flutter_application_2/features/authentication/screens/login/widgets/login_form.dart';
-import 'package:flutter_application_2/features/authentication/screens/login/widgets/login_header.dart';
-import 'package:flutter_application_2/utils/constants/sizes.dart';
+import 'package:kitsmart/common/styles/spacing_styles.dart';
+import 'package:kitsmart/common/widgets/login_signup/form_divider.dart';
+import 'package:kitsmart/common/widgets/login_signup/social_buttons.dart';
+import 'package:kitsmart/features/authentication/screens/login/widgets/login_form.dart';
+import 'package:kitsmart/features/authentication/screens/login/widgets/login_header.dart';
+import 'package:kitsmart/utils/constants/sizes.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/common/widgets/appbar/appbar.dart';
-import 'package:flutter_application_2/utils/constants/sizes.dart';
+import 'package:kitsmart/common/widgets/appbar/appbar.dart';
+import 'package:kitsmart/utils/constants/sizes.dart';
 import 'package:iconsax/iconsax.dart';
 
 class AddNewAddressScreen extends StatelessWidget {
@@ -14,33 +14,59 @@ class AddNewAddressScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(MMSizes.defaultSpace),
-          child: Form(child: Column(
+          child: Form(
+              child: Column(
             children: [
-              TextFormField(decoration: const InputDecoration(prefixIcon: Icon(Iconsax.user), labelText: 'Имя')),
+              TextFormField(
+                  decoration: const InputDecoration(
+                      prefixIcon: Icon(Iconsax.user), labelText: 'Имя')),
               const SizedBox(height: MMSizes.spaceBtwInputFields),
-              TextFormField(decoration: const InputDecoration(prefixIcon: Icon(Iconsax.mobile), labelText: 'Номер телефона')),
-              const SizedBox(height: MMSizes.spaceBtwInputFields),
-              Row(
-                children: [
-                  Expanded(child: TextFormField(decoration: const InputDecoration(prefixIcon: Icon(Iconsax.building_31), labelText: 'Улица'))),
-                  const SizedBox(width: MMSizes.spaceBtwInputFields),
-                  Expanded(child: TextFormField(decoration: const InputDecoration(prefixIcon: Icon(Iconsax.code), labelText: 'почтовый индекс'))),
-                ],
-              ),
-
+              TextFormField(
+                  decoration: const InputDecoration(
+                      prefixIcon: Icon(Iconsax.mobile),
+                      labelText: 'Номер телефона')),
               const SizedBox(height: MMSizes.spaceBtwInputFields),
               Row(
                 children: [
-                  Expanded(child: TextFormField(decoration: const InputDecoration(prefixIcon: Icon(Iconsax.building), labelText: 'Город'))),
+                  Expanded(
+                      child: TextFormField(
+                          decoration: const InputDecoration(
+                              prefixIcon: Icon(Iconsax.building_31),
+                              labelText: 'Улица'))),
                   const SizedBox(width: MMSizes.spaceBtwInputFields),
-                  Expanded(child: TextFormField(decoration: const InputDecoration(prefixIcon: Icon(Iconsax.building), labelText: 'Государство'))),
+                  Expanded(
+                      child: TextFormField(
+                          decoration: const InputDecoration(
+                              prefixIcon: Icon(Iconsax.code),
+                              labelText: 'почтовый индекс'))),
                 ],
               ),
-
               const SizedBox(height: MMSizes.spaceBtwInputFields),
-              TextFormField(decoration: const InputDecoration(prefixIcon: Icon(Iconsax.global), labelText: 'Страна')),
+              Row(
+                children: [
+                  Expanded(
+                      child: TextFormField(
+                          decoration: const InputDecoration(
+                              prefixIcon: Icon(Iconsax.building),
+                              labelText: 'Город'))),
+                  const SizedBox(width: MMSizes.spaceBtwInputFields),
+                  Expanded(
+                      child: TextFormField(
+                          decoration: const InputDecoration(
+                              prefixIcon: Icon(Iconsax.building),
+                              labelText: 'Государство'))),
+                ],
+              ),
+              const SizedBox(height: MMSizes.spaceBtwInputFields),
+              TextFormField(
+                  decoration: const InputDecoration(
+                      prefixIcon: Icon(Iconsax.global), labelText: 'Страна')),
               const SizedBox(height: MMSizes.defaultSpace),
-              SizedBox(width: double.infinity,child: ElevatedButton(onPressed: () {}, child: Text('Сохранить')),)
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                    onPressed: () {}, child: const Text('Сохранить')),
+              )
             ],
           )),
         ),

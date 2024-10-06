@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/common/widgets/brand/mm_brand_text_title_with_verified_icon.dart';
-import 'package:flutter_application_2/common/widgets/images/mm_circular_image.dart';
-import 'package:flutter_application_2/utils/constants/colors.dart';
-import 'package:flutter_application_2/utils/constants/enums.dart';
-import 'package:flutter_application_2/utils/constants/image_strings.dart';
-import 'package:flutter_application_2/utils/constants/sizes.dart';
-import 'package:flutter_application_2/utils/helpers/helper_function.dart';
-import 'package:flutter_application_2/utils/theme/custom_themes/rounded_container.dart';
+import 'package:kitsmart/common/widgets/brand/mm_brand_text_title_with_verified_icon.dart';
+import 'package:kitsmart/common/widgets/images/mm_circular_image.dart';
+import 'package:kitsmart/utils/constants/colors.dart';
+import 'package:kitsmart/utils/constants/enums.dart';
+import 'package:kitsmart/utils/constants/image_strings.dart';
+import 'package:kitsmart/utils/constants/sizes.dart';
+import 'package:kitsmart/utils/helpers/helper_function.dart';
+import 'package:kitsmart/utils/theme/custom_themes/rounded_container.dart';
 
 class MMBrandCart extends StatelessWidget {
   const MMBrandCart({super.key, this.showBorder = true, this.onTap});
@@ -42,7 +42,7 @@ class MMBrandCart extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  MMBrandTextTitleWithVerifiedIcon(
+                  const MMBrandTextTitleWithVerifiedIcon(
                       title: 'в наличии', brandTextSize: TextSizes.large),
                   Text('100 продуктов',
                       overflow: TextOverflow.ellipsis,

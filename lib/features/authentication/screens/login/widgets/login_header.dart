@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/utils/constants/sizes.dart';
-import 'package:flutter_application_2/utils/constants/text_strings.dart';
+import 'package:kitsmart/utils/constants/sizes.dart';
+import 'package:kitsmart/utils/constants/text_strings.dart';
 
 class MMLoginHeader extends StatelessWidget {
   const MMLoginHeader({super.key});

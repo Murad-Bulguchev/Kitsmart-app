@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/common/widgets/brand/mm_brand_title_text.dart';
-import 'package:flutter_application_2/utils/constants/colors.dart';
-import 'package:flutter_application_2/utils/constants/enums.dart';
-import 'package:flutter_application_2/utils/constants/sizes.dart';
-
 import 'package:iconsax/iconsax.dart';
+import 'package:kitsmart/common/widgets/brand/mm_brand_title_text.dart';
+import 'package:kitsmart/utils/constants/colors.dart';
+import 'package:kitsmart/utils/constants/enums.dart';
+import 'package:kitsmart/utils/constants/sizes.dart';
 
 class MMBrandTextTitleWithVerifiedIcon extends StatelessWidget {
   const MMBrandTextTitleWithVerifiedIcon({

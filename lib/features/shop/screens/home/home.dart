@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/common/widgets/custom_shapes/containers/search_container.dart';
-import 'package:flutter_application_2/common/widgets/layouts/grid_layout.dart';
-import 'package:flutter_application_2/common/widgets/producst/product_cards/producst_card_vertical.dart';
-import 'package:flutter_application_2/common/widgets/texts/section_heading.dart';
-import 'package:flutter_application_2/features/shop/screens/all_products/all_products.dart';
-import 'package:flutter_application_2/features/shop/screens/home/widgets/home_appbar.dart';
-import 'package:flutter_application_2/features/shop/screens/home/widgets/promo_slider.dart';
-import 'package:flutter_application_2/utils/constants/image_strings.dart';
-import 'package:flutter_application_2/utils/constants/sizes.dart';
-import 'package:flutter_application_2/utils/helpers/helper_function.dart';
+import 'package:kitsmart/common/widgets/custom_shapes/containers/search_container.dart';
+import 'package:kitsmart/common/widgets/layouts/grid_layout.dart';
+import 'package:kitsmart/common/widgets/producst/product_cards/producst_card_vertical.dart';
+import 'package:kitsmart/common/widgets/texts/section_heading.dart';
+import 'package:kitsmart/features/shop/screens/all_products/all_products.dart';
+import 'package:kitsmart/features/shop/screens/home/widgets/home_appbar.dart';
+import 'package:kitsmart/features/shop/screens/home/widgets/promo_slider.dart';
+import 'package:kitsmart/utils/constants/image_strings.dart';
+import 'package:kitsmart/utils/constants/sizes.dart';
+import 'package:kitsmart/utils/helpers/helper_function.dart';
 import 'package:get/get.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -26,15 +26,15 @@ class HomeScreen extends StatelessWidget {
                 //     child: Column(
                 //   children: [MMAppBar(title: HomeAppBar())],
                 // )),
-                SizedBox(height: MMSizes.borderRadiusLg),
-                Padding(
+                const SizedBox(height: MMSizes.borderRadiusLg),
+                const Padding(
                     padding: EdgeInsets.only(
                       left: MMSizes.spaceBtwItems,
                     ),
                     child: HomeAppBar()),
-                SizedBox(height: MMSizes.spaceBtwItems),
+                const SizedBox(height: MMSizes.spaceBtwItems),
                 Padding(
-                    padding: EdgeInsets.all(0),
+                    padding: const EdgeInsets.all(0),
                     child: Column(children: [
                       MMSearchContainer(
                         text: 'Поиск',
@@ -42,7 +42,7 @@ class HomeScreen extends StatelessWidget {
                             ? false
                             : false,
                       ),
-                      SizedBox(height: MMSizes.spaceBtwItems),
+                      const SizedBox(height: MMSizes.spaceBtwItems),
                       const MMPromoSlider(
                         banners: [
                           MMImages.promoBanner1,

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/common/widgets/brand/mm_brand_text_title_with_verified_icon.dart';
-import 'package:flutter_application_2/common/widgets/icon/mm_circular_icon.dart';
-import 'package:flutter_application_2/common/widgets/login_signup/mm_rounded_image.dart';
-import 'package:flutter_application_2/common/widgets/producst/product_cards/product_price_text.dart';
-import 'package:flutter_application_2/common/widgets/texts/product_title_text.dart';
-import 'package:flutter_application_2/utils/constants/colors.dart';
-import 'package:flutter_application_2/utils/constants/image_strings.dart';
-import 'package:flutter_application_2/utils/constants/sizes.dart';
-import 'package:flutter_application_2/utils/helpers/helper_function.dart';
-import 'package:flutter_application_2/utils/theme/custom_themes/rounded_container.dart';
+import 'package:kitsmart/common/widgets/brand/mm_brand_text_title_with_verified_icon.dart';
+import 'package:kitsmart/common/widgets/icon/mm_circular_icon.dart';
+import 'package:kitsmart/common/widgets/login_signup/mm_rounded_image.dart';
+import 'package:kitsmart/common/widgets/producst/product_cards/product_price_text.dart';
+import 'package:kitsmart/common/widgets/texts/product_title_text.dart';
+import 'package:kitsmart/utils/constants/colors.dart';
+import 'package:kitsmart/utils/constants/image_strings.dart';
+import 'package:kitsmart/utils/constants/sizes.dart';
+import 'package:kitsmart/utils/helpers/helper_function.dart';
+import 'package:kitsmart/utils/theme/custom_themes/rounded_container.dart';
 import 'package:iconsax/iconsax.dart';
 
 class MMProductCardHarizantal extends StatelessWidget {
@@ -31,7 +31,7 @@ class MMProductCardHarizantal extends StatelessWidget {
               backgroundColor: dark ? MMColors.dark : MMColors.light,
               child: Stack(
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 120,
                     width: 120,
                     child: MMRoudedImage(
@@ -51,7 +51,7 @@ class MMProductCardHarizantal extends StatelessWidget {
                                   .textTheme
                                   .labelLarge!
                                   .apply(color: MMColors.black)))),
-                  Positioned(
+                  const Positioned(
                       top: -10,
                       right: 0,
                       child: MMCircularIcon(
@@ -63,12 +63,12 @@ class MMProductCardHarizantal extends StatelessWidget {
           SizedBox(
             width: 130,
             child: Padding(
-              padding: EdgeInsets.only(top: MMSizes.sm, left: MMSizes.sm),
+              padding: const EdgeInsets.only(top: MMSizes.sm, left: MMSizes.sm),
               child: Column(
                 children: [
-                  Column(
+                  const Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       MMProductTitleText(
                           smallSize: true,
                           title: 'Creen Nike Harf Sleeves Nike Harf',

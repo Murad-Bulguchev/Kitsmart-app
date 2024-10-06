@@ -1,7 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/common/widgets/login_signup/mm_rounded_image.dart';
-import 'package:flutter_application_2/features/shop/controllers/home_controler.dart';
+import 'package:kitsmart/common/widgets/login_signup/mm_rounded_image.dart';
+import 'package:kitsmart/features/shop/controllers/home_controler.dart';
 import 'package:get/get.dart';
 
 class MMPromoSlider extends StatelessWidget {

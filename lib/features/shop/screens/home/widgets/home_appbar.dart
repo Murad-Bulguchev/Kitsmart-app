@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/utils/constants/sizes.dart';
-import 'package:flutter_application_2/utils/constants/text_strings.dart';
-import 'package:flutter_application_2/utils/helpers/helper_function.dart';
+import 'package:kitsmart/utils/constants/sizes.dart';
+import 'package:kitsmart/utils/constants/text_strings.dart';
+import 'package:kitsmart/utils/helpers/helper_function.dart';
 
 class HomeAppBar extends StatelessWidget {
   const HomeAppBar({super.key});

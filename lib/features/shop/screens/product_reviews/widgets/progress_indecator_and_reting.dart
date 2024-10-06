@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/utils/constants/colors.dart';
-import 'package:flutter_application_2/utils/device/device_utility.dart';
+import 'package:kitsmart/utils/constants/colors.dart';
+import 'package:kitsmart/utils/device/device_utility.dart';
 
 class ProgressIndecatorAndReting extends StatelessWidget {
   const ProgressIndecatorAndReting(

@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/common/widgets/login_signup/form_divider.dart';
-import 'package:flutter_application_2/common/widgets/login_signup/social_buttons.dart';
-import 'package:flutter_application_2/features/authentication/screens/signup/widgets/signup_form.dart';
-import 'package:flutter_application_2/utils/constants/sizes.dart';
-import 'package:flutter_application_2/utils/constants/text_strings.dart';
+import 'package:kitsmart/common/widgets/login_signup/form_divider.dart';
+import 'package:kitsmart/common/widgets/login_signup/social_buttons.dart';
+import 'package:kitsmart/features/authentication/screens/signup/widgets/signup_form.dart';
+import 'package:kitsmart/utils/constants/sizes.dart';
+import 'package:kitsmart/utils/constants/text_strings.dart';
 import 'package:get/get.dart';
 
 class SignupScreen extends StatelessWidget {
@@ -17,7 +17,7 @@ class SignupScreen extends StatelessWidget {
           automaticallyImplyLeading: false,
           actions: [
             Padding(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 child: IconButton(
                     onPressed: () => Get.back(),
                     icon: const Icon(CupertinoIcons.clear)))

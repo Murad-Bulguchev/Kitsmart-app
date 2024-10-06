@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/utils/constants/colors.dart';
+import 'package:kitsmart/utils/constants/colors.dart';
 
 class MMShadowStyle {
   static final verticalProductShadow = BoxShadow(

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/features/shop/screens/cart/cart.dart';
-import 'package:flutter_application_2/utils/constants/colors.dart';
-import 'package:flutter_application_2/utils/helpers/helper_function.dart';
+import 'package:kitsmart/features/shop/screens/cart/cart.dart';
+import 'package:kitsmart/utils/constants/colors.dart';
+import 'package:kitsmart/utils/helpers/helper_function.dart';
 import 'package:get/get.dart';
 
 class MMCartContainerIcon extends StatelessWidget {

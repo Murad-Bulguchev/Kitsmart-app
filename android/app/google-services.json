@@ -1,51 +1,26 @@
 {
   "project_info": {
-    "project_number": "786537118015",
-    "project_id": "kitsmart-fc6ad",
-    "storage_bucket": "kitsmart-fc6ad.appspot.com"
+    "project_number": "466473133509",
+    "project_id": "kitsmart-d776f",
+    "storage_bucket": "kitsmart-d776f.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:786537118015:android:484d2c35724b0d340abb8a",
+        "mobilesdk_app_id": "1:466473133509:android:c2346d1a34677f7ba3d7ac",
         "android_client_info": {
           "package_name": "com.example.flutter_application_2"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "786537118015-69u0q582ti8p7uqsjbqrd3g454dut838.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.flutter_application_2",
-            "certificate_hash": "d9d5fdd50d079f55268a43f3b86915ee39167174"
-          }
-        },
-        {
-          "client_id": "786537118015-b2b873bbcls6nan0vlndnvkpb9sesqt1.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDLR_cXr19_64OSK4DdK3oWj0FkEN37jeo"
+          "current_key": "AIzaSyBoBfqjYvpTF0rlYR36Y1cpi1tf1t4Gh_Y"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "786537118015-b2b873bbcls6nan0vlndnvkpb9sesqt1.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "786537118015-r1cjmpnerfma9g8rl6p0f7kkso9nuk2b.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.flutterApplication2"
-              }
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }

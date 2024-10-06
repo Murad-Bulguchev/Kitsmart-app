@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/features/authentication/screens/password_configuration/forget_password.dart';
-import 'package:flutter_application_2/features/authentication/screens/signup/signup.dart';
-import 'package:flutter_application_2/navigation_menu.dart';
-import 'package:flutter_application_2/utils/constants/colors.dart';
-import 'package:flutter_application_2/utils/constants/sizes.dart';
-import 'package:flutter_application_2/utils/constants/text_strings.dart';
+import 'package:kitsmart/features/authentication/screens/password_configuration/forget_password.dart';
+import 'package:kitsmart/features/authentication/screens/signup/signup.dart';
+import 'package:kitsmart/navigation_menu.dart';
+import 'package:kitsmart/utils/constants/colors.dart';
+import 'package:kitsmart/utils/constants/sizes.dart';
+import 'package:kitsmart/utils/constants/text_strings.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -20,7 +20,7 @@ class MMLoginForm extends StatelessWidget {
               children: [
                 TextFormField(
                   decoration: InputDecoration(
-                    prefixIcon: Icon(Icons.email_outlined),
+                    prefixIcon: const Icon(Icons.email_outlined),
                     labelText: MMTexts.email,
                     filled: true,
                     fillColor: MMColors.containerGrey,
@@ -28,13 +28,13 @@ class MMLoginForm extends StatelessWidget {
                       borderRadius: BorderRadius.circular(15),
                     ),
                     focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: MMColors.primaryColor2),
+                      borderSide:
+                          const BorderSide(color: MMColors.primaryColor2),
                       borderRadius: BorderRadius.circular(15),
                     ),
                     enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
-                          color: const Color.fromARGB(255, 41, 41, 41),
-                          width: 1),
+                      borderSide: const BorderSide(
+                          color: Color.fromARGB(255, 41, 41, 41), width: 1),
                       borderRadius: BorderRadius.circular(15),
                     ),
                   ),
@@ -52,13 +52,13 @@ class MMLoginForm extends StatelessWidget {
                     labelText: MMTexts.password,
                     suffixIcon: const Icon(Iconsax.eye_slash),
                     enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
-                          color: const Color.fromARGB(255, 41, 41, 41),
-                          width: 1),
+                      borderSide: const BorderSide(
+                          color: Color.fromARGB(255, 41, 41, 41), width: 1),
                       borderRadius: BorderRadius.circular(15),
                     ),
                     focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: MMColors.primaryColor2),
+                      borderSide:
+                          const BorderSide(color: MMColors.primaryColor2),
                       borderRadius: BorderRadius.circular(15),
                     ),
                   ),
@@ -77,8 +77,7 @@ class MMLoginForm extends StatelessWidget {
                         onPressed: () => Get.to(() => const ForgetPassword()),
                         child: const Text(
                           MMTexts.forgetPassword,
-                          style: TextStyle(
-                              color: MMColors.textButtonColor),
+                          style: TextStyle(color: MMColors.textButtonColor),
                         )),
                   ],
                 ),
@@ -91,7 +90,7 @@ class MMLoginForm extends StatelessWidget {
                         padding: const EdgeInsets.all(15),
                         minimumSize: const Size(double.infinity, 55),
                         backgroundColor: MMColors.primaryColor2,
-                        side: BorderSide(color: MMColors.primaryColor2)),
+                        side: const BorderSide(color: MMColors.primaryColor2)),
                     child: const Text(MMTexts.signIn),
                   ),
                 ),
@@ -105,7 +104,7 @@ class MMLoginForm extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                         padding: const EdgeInsets.all(12),
                         minimumSize: const Size(double.infinity, 55),
-                        side: BorderSide(color: MMColors.primaryColor2)),
+                        side: const BorderSide(color: MMColors.primaryColor2)),
                     child: const Text(MMTexts.createAccount),
                   ),
                 ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/features/authentication/screens/login/login.dart';
+import 'package:kitsmart/features/authentication/screens/login/login.dart';
 import 'package:get/get.dart';
 
 class OnBoardingController extends GetxController {

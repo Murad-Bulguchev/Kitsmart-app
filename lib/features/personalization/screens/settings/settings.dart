@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/common/widgets/appbar/appbar.dart';
-import 'package:flutter_application_2/common/widgets/custom_shapes/containers/mm-primary-header-settings.dart';
-import 'package:flutter_application_2/common/widgets/list_tiles/user_menu_tile.dart';
-import 'package:flutter_application_2/common/widgets/list_tiles/user_profile_tile.dart';
-import 'package:flutter_application_2/common/widgets/texts/section_heading.dart';
-import 'package:flutter_application_2/features/personalization/screens/address/address.dart';
-import 'package:flutter_application_2/features/personalization/screens/profile/profile.dart';
-import 'package:flutter_application_2/utils/constants/colors.dart';
-import 'package:flutter_application_2/utils/constants/sizes.dart';
+import 'package:kitsmart/common/widgets/appbar/appbar.dart';
+import 'package:kitsmart/common/widgets/custom_shapes/containers/mm-primary-header-settings.dart';
+import 'package:kitsmart/common/widgets/list_tiles/user_menu_tile.dart';
+import 'package:kitsmart/common/widgets/list_tiles/user_profile_tile.dart';
+import 'package:kitsmart/common/widgets/texts/section_heading.dart';
+import 'package:kitsmart/features/personalization/screens/address/address.dart';
+import 'package:kitsmart/features/personalization/screens/profile/profile.dart';
+import 'package:kitsmart/utils/constants/colors.dart';
+import 'package:kitsmart/utils/constants/sizes.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -35,48 +35,48 @@ class SettingsScreen extends StatelessWidget {
               ],
             )),
             Padding(
-              padding: EdgeInsets.all(MMSizes.defaultSpace),
+              padding: const EdgeInsets.all(MMSizes.defaultSpace),
               child: Column(
                 children: [
-                  MMSectionHeading(
+                  const MMSectionHeading(
                     title: 'Account Settings',
                     showActionButton: false,
                   ),
-                  SizedBox(height: MMSizes.spaceBtwItems),
+                  const SizedBox(height: MMSizes.spaceBtwItems),
                   MMSettingsMenuTile(
                       icon: Iconsax.safe_home,
                       title: 'My Addresses',
                       subTitle: 'Set shopping delivery address',
                       onTap: () => Get.to(() => const UserAddressScreen())),
-                  MMSettingsMenuTile(
+                  const MMSettingsMenuTile(
                       icon: Iconsax.shopping_cart,
                       title: 'My Cart',
                       subTitle: 'Add, remove products and move to checkout'),
-                  MMSettingsMenuTile(
+                  const MMSettingsMenuTile(
                       icon: Iconsax.bag_tick,
                       title: 'My Orders',
                       subTitle: 'In-progress and Completed Orders'),
-                  MMSettingsMenuTile(
+                  const MMSettingsMenuTile(
                       icon: Iconsax.bank,
                       title: 'Bank Account',
                       subTitle: 'Withdraw balance to registered bank account'),
-                  MMSettingsMenuTile(
+                  const MMSettingsMenuTile(
                       icon: Iconsax.discount_shape,
                       title: 'My Coupons',
                       subTitle: 'List of all the discounted coupons'),
-                  MMSettingsMenuTile(
+                  const MMSettingsMenuTile(
                       icon: Iconsax.notification,
                       title: 'Notifications',
                       subTitle: 'Set any kind of notification message'),
-                  MMSettingsMenuTile(
+                  const MMSettingsMenuTile(
                       icon: Iconsax.security_card,
                       title: 'Account Privacy',
                       subTitle: 'Manage data usage and connected accounts'),
-                  SizedBox(height: MMSizes.spaceBtwSections),
-                  MMSectionHeading(
+                  const SizedBox(height: MMSizes.spaceBtwSections),
+                  const MMSectionHeading(
                       title: 'App Settings', showActionButton: false),
-                  SizedBox(height: MMSizes.spaceBtwSections),
-                  MMSettingsMenuTile(
+                  const SizedBox(height: MMSizes.spaceBtwSections),
+                  const MMSettingsMenuTile(
                       title: 'Load Fata',
                       icon: Iconsax.document_upload,
                       subTitle: 'Upload Data to your Cloud Firebase'),

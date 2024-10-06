@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/common/styles/spacing_styles.dart';
-import 'package:flutter_application_2/utils/constants/colors.dart';
-import 'package:flutter_application_2/utils/constants/sizes.dart';
-import 'package:flutter_application_2/utils/constants/text_strings.dart';
-import 'package:flutter_application_2/utils/helpers/helper_function.dart';
+import 'package:kitsmart/common/styles/spacing_styles.dart';
+import 'package:kitsmart/utils/constants/colors.dart';
+import 'package:kitsmart/utils/constants/sizes.dart';
+import 'package:kitsmart/utils/constants/text_strings.dart';
+import 'package:kitsmart/utils/helpers/helper_function.dart';
 
 class SuccesScreen extends StatelessWidget {
   const SuccesScreen(
@@ -42,12 +42,13 @@ class SuccesScreen extends StatelessWidget {
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: onPressed,
-                child: const Text(MMTexts.tContinue),
                 style: ElevatedButton.styleFrom(
                     backgroundColor: MMColors.primaryColor2,
-                    side: BorderSide(width: 1, color: MMColors.primaryColor2),
+                    side: const BorderSide(
+                        width: 1, color: MMColors.primaryColor2),
                     padding: const EdgeInsets.all(12),
                     minimumSize: const Size(double.infinity, 55)),
+                child: const Text(MMTexts.tContinue),
               ),
             ),
           ],

@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/common/widgets/appbar/MMTabBar.dart';
-import 'package:flutter_application_2/common/widgets/appbar/appbar.dart';
-import 'package:flutter_application_2/common/widgets/brand/mm_brand_cart.dart';
-import 'package:flutter_application_2/common/widgets/custom_shapes/containers/search_container.dart';
-import 'package:flutter_application_2/common/widgets/layouts/grid_layout.dart';
-import 'package:flutter_application_2/common/widgets/producst/cart/cart_menu_icon.dart';
-import 'package:flutter_application_2/common/widgets/texts/section_heading.dart';
-import 'package:flutter_application_2/features/shop/screens/brand/all_brands.dart';
-import 'package:flutter_application_2/features/shop/screens/store/widgets/category_tab.dart';
-import 'package:flutter_application_2/utils/constants/colors.dart';
-import 'package:flutter_application_2/utils/constants/sizes.dart';
-import 'package:flutter_application_2/utils/helpers/helper_function.dart';
+import 'package:kitsmart/common/widgets/appbar/MMTabBar.dart';
+import 'package:kitsmart/common/widgets/appbar/appbar.dart';
+import 'package:kitsmart/common/widgets/brand/mm_brand_cart.dart';
+import 'package:kitsmart/common/widgets/custom_shapes/containers/search_container.dart';
+import 'package:kitsmart/common/widgets/layouts/grid_layout.dart';
+import 'package:kitsmart/common/widgets/producst/cart/cart_menu_icon.dart';
+import 'package:kitsmart/common/widgets/texts/section_heading.dart';
+import 'package:kitsmart/features/shop/screens/brand/all_brands.dart';
+import 'package:kitsmart/features/shop/screens/store/widgets/category_tab.dart';
+import 'package:kitsmart/utils/constants/colors.dart';
+import 'package:kitsmart/utils/constants/sizes.dart';
+import 'package:kitsmart/utils/helpers/helper_function.dart';
 import 'package:get/get.dart';
 
 class Store extends StatelessWidget {
@@ -56,7 +56,7 @@ class Store extends StatelessWidget {
                             : MMColors.textWhite,
                         expandedHeight: 440,
                         flexibleSpace: Padding(
-                          padding: EdgeInsets.all(MMSizes.defaultSpace),
+                          padding: const EdgeInsets.all(MMSizes.defaultSpace),
                           child: ListView(
                             shrinkWrap: true,
                             physics: const NeverScrollableScrollPhysics(),
@@ -73,7 +73,7 @@ class Store extends StatelessWidget {
                               MMSectionHeading(
                                   title: 'Различные товары',
                                   onPressed: () =>
-                                      Get.to(() => AllBrandsScreen())),
+                                      Get.to(() => const AllBrandsScreen())),
                               const SizedBox(
                                   height: MMSizes.spaceBtwItems / 1.5),
                               MMGridLayout(

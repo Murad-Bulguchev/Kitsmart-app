@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/utils/constants/colors.dart';
-import 'package:flutter_application_2/utils/constants/sizes.dart';
-import 'package:flutter_application_2/utils/helpers/helper_function.dart';
-import 'package:flutter_application_2/utils/theme/custom_themes/rounded_container.dart';
+import 'package:kitsmart/utils/constants/colors.dart';
+import 'package:kitsmart/utils/constants/sizes.dart';
+import 'package:kitsmart/utils/helpers/helper_function.dart';
+import 'package:kitsmart/utils/theme/custom_themes/rounded_container.dart';
 import 'package:iconsax/iconsax.dart';
 
 class MMSingleAddress extends StatelessWidget {

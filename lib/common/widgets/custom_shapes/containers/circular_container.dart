@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/utils/constants/colors.dart';
+import 'package:kitsmart/utils/constants/colors.dart';
 
 class MMCircularContainer extends StatelessWidget {
   const MMCircularContainer(
@@ -9,7 +9,7 @@ class MMCircularContainer extends StatelessWidget {
       this.height = 400,
       this.radius = 400,
       this.padding = 0,
-      this.margin = EdgeInsets.zero, 
+      this.margin = EdgeInsets.zero,
       this.backgroundColor = MMColors.textWhite});
 
   final double? width;
@@ -18,14 +18,14 @@ class MMCircularContainer extends StatelessWidget {
   final double padding;
   final Widget? child;
   final Color backgroundColor;
-  final EdgeInsets margin; 
+  final EdgeInsets margin;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       width: width,
       height: height,
-      margin: margin, 
+      margin: margin,
       padding: EdgeInsets.all(padding),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(radius),

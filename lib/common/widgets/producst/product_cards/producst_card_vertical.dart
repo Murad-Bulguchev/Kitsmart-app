@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/common/widgets/brand/mm_brand_text_title_with_verified_icon.dart';
-import 'package:flutter_application_2/common/widgets/icon/mm_circular_icon.dart';
-import 'package:flutter_application_2/common/widgets/login_signup/mm_rounded_image.dart';
-import 'package:flutter_application_2/common/widgets/producst/product_cards/product_price_text.dart';
-import 'package:flutter_application_2/features/shop/screens/product_detalis/product_detali.dart';
-import 'package:flutter_application_2/utils/constants/colors.dart';
-import 'package:flutter_application_2/utils/constants/image_strings.dart';
-import 'package:flutter_application_2/utils/constants/sizes.dart';
-import 'package:flutter_application_2/utils/helpers/helper_function.dart';
-import 'package:flutter_application_2/utils/theme/custom_themes/rounded_container.dart';
-import 'package:flutter_application_2/utils/theme/custom_themes/shadows.dart';
+import 'package:kitsmart/common/widgets/brand/mm_brand_text_title_with_verified_icon.dart';
+import 'package:kitsmart/common/widgets/icon/mm_circular_icon.dart';
+import 'package:kitsmart/common/widgets/login_signup/mm_rounded_image.dart';
+import 'package:kitsmart/common/widgets/producst/product_cards/product_price_text.dart';
+import 'package:kitsmart/features/shop/screens/product_detalis/product_detali.dart';
+import 'package:kitsmart/utils/constants/colors.dart';
+import 'package:kitsmart/utils/constants/image_strings.dart';
+import 'package:kitsmart/utils/constants/sizes.dart';
+import 'package:kitsmart/utils/helpers/helper_function.dart';
+import 'package:kitsmart/utils/theme/custom_themes/rounded_container.dart';
+import 'package:kitsmart/utils/theme/custom_themes/shadows.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import '../../texts/product_title_text.dart';
@@ -41,7 +41,7 @@ class MMProductCardVertical extends StatelessWidget {
                   dark ? MMColors.containerGrey : MMColors.textWhite,
               child: Stack(
                 children: [
-                  Positioned(
+                  const Positioned(
                       child: MMRoudedImage(
                           imageUrl: MMImages.productImage1,
                           applyImageRadius: true)),
@@ -70,12 +70,11 @@ class MMProductCardVertical extends StatelessWidget {
               ),
             ),
             const SizedBox(height: MMSizes.spaceBtwItems / 2),
-            Padding(
-              padding:
-                  const EdgeInsets.only(left: MMSizes.sm, right: MMSizes.sm),
+            const Padding(
+              padding: EdgeInsets.only(left: MMSizes.sm, right: MMSizes.sm),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
+                children: [
                   MMProductTitleText(
                     title:
                         'Смартфон Apple iPhone 16 Pro Max 256GB nanoSim/eSim Desert Titanium',
@@ -87,7 +86,7 @@ class MMProductCardVertical extends StatelessWidget {
                 ],
               ),
             ),
-            Spacer(),
+            const Spacer(),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -108,7 +107,7 @@ class MMProductCardVertical extends StatelessWidget {
                       height: MMSizes.iconLg * 1.2,
                       child: IconButton(
                           onPressed: () {},
-                          icon: Icon(
+                          icon: const Icon(
                             Icons.shopping_cart_outlined,
                             color: MMColors.textWhite,
                           ))),

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/common/widgets/appbar/appbar.dart';
-import 'package:flutter_application_2/features/personalization/screens/address/add_new_address.dart';
-import 'package:flutter_application_2/features/personalization/screens/address/widgets/single_address.dart';
-import 'package:flutter_application_2/utils/constants/colors.dart';
-import 'package:flutter_application_2/utils/constants/sizes.dart';
+import 'package:kitsmart/common/widgets/appbar/appbar.dart';
+import 'package:kitsmart/features/personalization/screens/address/add_new_address.dart';
+import 'package:kitsmart/features/personalization/screens/address/widgets/single_address.dart';
+import 'package:kitsmart/utils/constants/colors.dart';
+import 'package:kitsmart/utils/constants/sizes.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -18,7 +18,7 @@ class UserAddressScreen extends StatelessWidget {
         child: const Icon(Iconsax.add, color: MMColors.textWhite),
         onPressed: () => Get.to(() => const AddNewAddressScreen()),
       ),
-      appBar: MMAppBar(
+      appBar: const MMAppBar(
         showBackArrow: true,
         title: Text('Адреса'),
       ),

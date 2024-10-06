@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/common/widgets/appbar/appbar.dart';
-import 'package:flutter_application_2/common/widgets/producst/cart/add_remove_button.dart';
-import 'package:flutter_application_2/common/widgets/producst/cart/cart_items.dart';
-import 'package:flutter_application_2/common/widgets/producst/product_cards/product_price_text.dart';
-import 'package:flutter_application_2/utils/constants/sizes.dart';
+import 'package:kitsmart/common/widgets/appbar/appbar.dart';
+import 'package:kitsmart/common/widgets/producst/cart/add_remove_button.dart';
+import 'package:kitsmart/common/widgets/producst/cart/cart_items.dart';
+import 'package:kitsmart/common/widgets/producst/product_cards/product_price_text.dart';
+import 'package:kitsmart/utils/constants/sizes.dart';
 
 class CartScreen extends StatelessWidget {
   const CartScreen({super.key});
@@ -13,7 +13,7 @@ class CartScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MMAppBar(
+      appBar: const MMAppBar(
         title: Text('Корзина'),
         showBackArrow: true,
       ),
@@ -21,8 +21,8 @@ class CartScreen extends StatelessWidget {
           padding: const EdgeInsets.all(MMSizes.defaultSpace),
           child: ListView.separated(
               shrinkWrap: true,
-              itemBuilder: (_, __) => Column(
-                    children: const [
+              itemBuilder: (_, __) => const Column(
+                    children: [
                       MMCartItems(),
                       SizedBox(height: MMSizes.spaceBtwItems),
                       Row(

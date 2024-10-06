@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/utils/constants/colors.dart';
-import 'package:flutter_application_2/utils/constants/sizes.dart';
+import 'package:kitsmart/utils/constants/colors.dart';
+import 'package:kitsmart/utils/constants/sizes.dart';
 
 class MMRoundedContainer extends StatelessWidget {
   const MMRoundedContainer({
@@ -36,9 +36,7 @@ class MMRoundedContainer extends StatelessWidget {
       decoration: BoxDecoration(
         color: backgroundColor,
         borderRadius: BorderRadius.circular(radius),
-        border: showBorder
-            ? Border.all(color: borderColor)
-            : null,
+        border: showBorder ? Border.all(color: borderColor) : null,
       ), // BoxDecoration
       child: child,
     ); // Container

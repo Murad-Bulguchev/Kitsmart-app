@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/common/widgets/brand/mm_brand_cart.dart';
-import 'package:flutter_application_2/utils/constants/colors.dart';
-import 'package:flutter_application_2/utils/constants/sizes.dart';
-import 'package:flutter_application_2/utils/helpers/helper_function.dart';
-import 'package:flutter_application_2/utils/theme/custom_themes/rounded_container.dart';
+import 'package:kitsmart/common/widgets/brand/mm_brand_cart.dart';
+import 'package:kitsmart/utils/constants/colors.dart';
+import 'package:kitsmart/utils/constants/sizes.dart';
+import 'package:kitsmart/utils/helpers/helper_function.dart';
+import 'package:kitsmart/utils/theme/custom_themes/rounded_container.dart';
 
 class MMBrandShowcase extends StatelessWidget {
   const MMBrandShowcase({
@@ -22,10 +22,10 @@ class MMBrandShowcase extends StatelessWidget {
             : const Color.fromARGB(83, 36, 36, 36),
         padding: const EdgeInsets.all(MMSizes.md),
         backgroundColor: Colors.transparent,
-        margin: EdgeInsets.only(bottom: MMSizes.spaceBtwItems),
+        margin: const EdgeInsets.only(bottom: MMSizes.spaceBtwItems),
         child: Column(
           children: [
-            MMBrandCart(
+            const MMBrandCart(
               showBorder: false,
             ),
             const SizedBox(height: MMSizes.spaceBtwItems),

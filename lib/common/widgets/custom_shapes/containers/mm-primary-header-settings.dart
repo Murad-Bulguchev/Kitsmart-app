@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/common/widgets/custom_shapes/curved_edges/curved_edges_widget.dart';
-import 'package:flutter_application_2/utils/constants/colors.dart';
+import 'package:kitsmart/common/widgets/custom_shapes/curved_edges/curved_edges_widget.dart';
+import 'package:kitsmart/utils/constants/colors.dart';
 
 class MMPrimaryHeaderSettings extends StatelessWidget {
   const MMPrimaryHeaderSettings({super.key, required this.child});

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/common/widgets/brand/mm_brand_text_title_with_verified_icon.dart';
-import 'package:flutter_application_2/common/widgets/login_signup/mm_rounded_image.dart';
-import 'package:flutter_application_2/common/widgets/texts/product_title_text.dart';
-import 'package:flutter_application_2/utils/constants/colors.dart';
-import 'package:flutter_application_2/utils/constants/image_strings.dart';
-import 'package:flutter_application_2/utils/constants/sizes.dart';
-import 'package:flutter_application_2/utils/helpers/helper_function.dart';
+import 'package:kitsmart/common/widgets/brand/mm_brand_text_title_with_verified_icon.dart';
+import 'package:kitsmart/common/widgets/login_signup/mm_rounded_image.dart';
+import 'package:kitsmart/common/widgets/texts/product_title_text.dart';
+import 'package:kitsmart/utils/constants/colors.dart';
+import 'package:kitsmart/utils/constants/image_strings.dart';
+import 'package:kitsmart/utils/constants/sizes.dart';
+import 'package:kitsmart/utils/helpers/helper_function.dart';
 
 class MMCartItems extends StatelessWidget {
   const MMCartItems({super.key});
@@ -17,7 +17,7 @@ class MMCartItems extends StatelessWidget {
         MMRoudedImage(
             width: 80,
             height: 80,
-            padding: EdgeInsets.all(MMSizes.sm),
+            padding: const EdgeInsets.all(MMSizes.sm),
             backgroundColor: MMHelperFunctions.isDarkMode(context)
                 ? MMColors.darkerGrey
                 : MMColors.light,

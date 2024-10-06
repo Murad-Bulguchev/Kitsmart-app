@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/common/widgets/texts/section_heading.dart';
-import 'package:flutter_application_2/features/shop/screens/product_reviews/product_reviews.dart';
-import 'package:flutter_application_2/features/shop/screens/product_detalis/widgets/bottom_add_to_cart_widget.dart';
-import 'package:flutter_application_2/features/shop/screens/product_detalis/widgets/producst_detali_image_slider.dart';
-import 'package:flutter_application_2/features/shop/screens/product_detalis/widgets/product_atributes.dart';
-import 'package:flutter_application_2/features/shop/screens/product_detalis/widgets/product_meta_data.dart';
-import 'package:flutter_application_2/features/shop/screens/product_detalis/widgets/rating_share_widget.dart';
-import 'package:flutter_application_2/utils/constants/sizes.dart';
+import 'package:kitsmart/common/widgets/texts/section_heading.dart';
+import 'package:kitsmart/features/shop/screens/product_reviews/product_reviews.dart';
+import 'package:kitsmart/features/shop/screens/product_detalis/widgets/bottom_add_to_cart_widget.dart';
+import 'package:kitsmart/features/shop/screens/product_detalis/widgets/producst_detali_image_slider.dart';
+import 'package:kitsmart/features/shop/screens/product_detalis/widgets/product_atributes.dart';
+import 'package:kitsmart/features/shop/screens/product_detalis/widgets/product_meta_data.dart';
+import 'package:kitsmart/features/shop/screens/product_detalis/widgets/rating_share_widget.dart';
+import 'package:kitsmart/utils/constants/sizes.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:readmore/readmore.dart';
@@ -17,11 +17,11 @@ class ProductDetaliScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: MMBottomAddToCart(),
+      bottomNavigationBar: const MMBottomAddToCart(),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            ProducstDetaliImageSlider(),
+            const ProducstDetaliImageSlider(),
             Padding(
               padding: const EdgeInsets.only(
                   right: MMSizes.defaultSpace,
@@ -29,14 +29,14 @@ class ProductDetaliScreen extends StatelessWidget {
                   bottom: MMSizes.defaultSpace),
               child: Column(
                 children: [
-                  MMRatingAndShare(),
-                  MMProductMetaData(),
-                  MMProductAtributes(),
+                  const MMRatingAndShare(),
+                  const MMProductMetaData(),
+                  const MMProductAtributes(),
                   const SizedBox(height: MMSizes.spaceBtwSections),
                   SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
-                          onPressed: () {}, child: Text('Checkout'))),
+                          onPressed: () {}, child: const Text('Checkout'))),
                   const SizedBox(height: MMSizes.spaceBtwSections),
                   const MMSectionHeading(
                       title: 'Description', showActionButton: false),
